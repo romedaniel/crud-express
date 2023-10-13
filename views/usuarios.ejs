@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+<body>
+    <h1>Listado de usuarios</h1>
+    <h2><%=  subtitulo2    %></h2>
+    <h3><%= subtitulo3 %></h3>
+    <hr>
+    
+    <% for(let i=0; i<listado.length; i++){ %>
+<hr>
+        <p>ID: <%= listado[i].id %></p>
+        <p>Usuario: <%= listado[i].usuario %></p>
+        <p>Contraseña: <%= listado[i].password %></p>
+<hr>
+    <% } %>
+
+  
+    <button onclick="location.replace('/')">Volver</button>
+    <br>
+    <a href="/">Volver al menú principal</a>
+</body>
+</html> 
